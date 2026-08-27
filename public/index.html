@@ -42,6 +42,21 @@
   }
   .streak .n{font-size:1.5rem;font-weight:600;color:var(--gold);letter-spacing:-.01em}
   .streak .l{font-size:.9rem;color:var(--muted)}
+  .hero{display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap;margin-bottom:32px}
+  .avatar{width:132px;height:132px;border-radius:14px;object-fit:cover;border:1px solid var(--rule);flex:none}
+  .hero .eyebrow{margin-top:0}
+  .hero .pron{margin-bottom:0}
+  .hero-txt{flex:1 1 320px;min-width:0}
+  .shotwrap{display:flex;gap:26px;flex-wrap:wrap;align-items:flex-start}
+  .shot{width:260px;height:260px;border-radius:12px;object-fit:cover;border:1px solid var(--rule);flex:none}
+  .shotmeta{flex:1 1 300px;min-width:0}
+  .shotmeta .t{font-weight:500;margin:0 0 6px}
+  .shotmeta .s{color:var(--muted);font-size:.92rem;margin:0 0 14px}
+  .dl{
+    display:inline-block;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:9px 16px;margin-bottom:14px
+  }
+  .dl:hover{border-color:var(--gold);color:var(--gold)}
   .rule{height:1px;background:var(--rule);margin:56px 0}
   h2{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:500;margin:0 0 18px}
   .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
@@ -81,12 +96,16 @@
 <body>
 <main class="wrap">
 
-  <p class="eyebrow">Speaker Resources</p>
-  <h1>Gerald Auger, PhD</h1>
-
-  <p class="pron">
-    Pronounced <b>OH-zher</b>, like Azure with an O &nbsp;·&nbsp; Spelled <b>A-U-G-E-R</b> &nbsp;·&nbsp; Goes by <b>Gerry</b>, with a G
-  </p>
+  <div class="hero">
+    <img class="avatar" src="/assets/gerald-auger-headshot-600.webp" width="132" height="132" alt="Gerald Auger, PhD">
+    <div class="hero-txt">
+      <p class="eyebrow">Speaker Resources</p>
+      <h1>Gerald Auger, PhD</h1>
+      <p class="pron">
+        Pronounced <b>OH-zher</b>, like Azure with an O &nbsp;·&nbsp; Spelled <b>A-U-G-E-R</b> &nbsp;·&nbsp; Goes by <b>Gerry</b>, with a G
+      </p>
+    </div>
+  </div>
 
   <p class="lede">
     Founder of Simply Cyber. I help people build real cybersecurity careers, and I help
@@ -103,8 +122,8 @@
   <h2>For Event Organizers</h2>
   <div class="grid">
     <div class="card"><p class="t">Intro Script</p><p class="s">Written to be read aloud, not recited from a bio.</p><p class="ready"><a class="plain" href="#intro">Ready &rarr;</a></p></div>
-    <div class="card"><p class="t">Bios</p><p class="s">Long, medium, short, and micro. Copy and paste.</p><p class="soon">Coming soon</p></div>
-    <div class="card"><p class="t">Headshots</p><p class="s">High resolution, print ready.</p><p class="soon">Coming soon</p></div>
+    <div class="card"><p class="t">Bios</p><p class="s">Long, medium, short, and micro. Copy and paste.</p><p class="ready"><a class="plain" href="#bios">Ready &rarr;</a></p></div>
+    <div class="card"><p class="t">Headshots</p><p class="s">High resolution, print ready.</p><p class="ready"><a class="plain" href="#headshots">Ready &rarr;</a></p></div>
     <div class="card"><p class="t">Action Shots</p><p class="s">On stage, for promo use.</p><p class="soon">Coming soon</p></div>
     <div class="card"><p class="t">Talks &amp; Abstracts</p><p class="s">Titles, subtitles, and full session descriptions.</p><p class="soon">Coming soon</p></div>
     <div class="card"><p class="t">AV &amp; Logistics</p><p class="s">Tech needs, travel origin, and what I need from you.</p><p class="soon">Coming soon</p></div>
@@ -146,6 +165,76 @@
     </div>
     <p class="aside"><span class="tag">Note to the emcee</span> Auger is pronounced <b>OH-zher</b>, like Azure with an O. Please don't read this line aloud.</p>
   </div>
+
+  <div class="rule"></div>
+
+  <h2 id="bios">Biographies</h2>
+  <p class="s" style="color:var(--muted);font-size:.92rem;margin:-6px 0 24px">
+    Copy any of these as-is, or mix sections to fit your format. The episode count updates itself, so whichever you take is current.
+  </p>
+
+  <div class="script" data-copyable>
+    <div class="head-row">
+      <div><h3>Long</h3><p class="meta">287 words</p></div>
+      <button class="copy" type="button">Copy</button>
+    </div>
+    <div data-body>
+      <p>Gerald Auger, PhD is the founder of Simply Cyber, a cybersecurity education and media company built on one deeply unglamorous habit: showing up.</p>
+      <p>Since December 2021 he has hosted the Daily Cyber Threat Brief live every weekday morning, walking practitioners through the last twenty four hours in security and what it actually means for their work. The show won the SANS Difference Makers Award for Podcast of the Year in 2024. It has now run for <span data-streak>1,232</span> consecutive weekday mornings without missing one.</p>
+      <p>What began as a livestream became a community. Simply Cyber reaches more than 260,000 subscribers on YouTube and 75,000 followers on LinkedIn, and its Discord server holds 17,000 members who trade job leads, interview prep, and hard-won advice with each other every day. Gerald built the whole thing around three values he will not trade away: support, inclusion, and empowerment.</p>
+      <p>He holds a PhD in cyber operations from Dakota State University and has spent more than twenty years in the field, concentrated in governance, risk, and compliance. He is an adjunct professor at The Citadel and Director of Strategy at Kairos Sec. Through Simply Cyber Academy he has taught GRC to more than 10,000 students, most of them through the Definitive GRC Analyst Master Class, priced deliberately low because the point is access rather than margin.</p>
+      <p>His work lives at the intersection of two things this industry usually keeps apart: technical rigor and plain human language. He is at his best explaining why a risk matters to someone who did not ask for a lecture, whether that is a room of executives, a first-time analyst, or four hundred people in a live chat at eight in the morning.</p>
+      <p>He lives in Charleston, South Carolina.</p>
+    </div>
+  </div>
+
+  <div class="script" data-copyable>
+    <div class="head-row">
+      <div><h3>Medium</h3><p class="meta">150 words</p></div>
+      <button class="copy" type="button">Copy</button>
+    </div>
+    <div data-body>
+      <p>Gerald Auger, PhD is the founder of Simply Cyber, a cybersecurity education and media company built on one unglamorous habit: showing up. Since December 2021 he has hosted the Daily Cyber Threat Brief live every weekday morning, <span data-streak>1,232</span> consecutive mornings, and won the SANS Difference Makers Award for Podcast of the Year in 2024 doing it.</p>
+      <p>What began as a livestream became a community: 260,000 subscribers on YouTube, 75,000 followers on LinkedIn, and 17,000 members in a Discord server where practitioners trade job leads and hard-won advice every day.</p>
+      <p>He holds a PhD in cyber operations from Dakota State University, has spent more than twenty years in governance, risk, and compliance, teaches as an adjunct professor at The Citadel, and has taught GRC to over 10,000 students through Simply Cyber Academy. He is at his best explaining why a risk matters to someone who did not ask for a lecture.</p>
+    </div>
+  </div>
+
+  <div class="script" data-copyable>
+    <div class="head-row">
+      <div><h3>Short</h3><p class="meta">65 words</p></div>
+      <button class="copy" type="button">Copy</button>
+    </div>
+    <div data-body>
+      <p>Gerald Auger, PhD is the founder of Simply Cyber. He has hosted the Daily Cyber Threat Brief live every weekday morning since December 2021, <span data-streak>1,232</span> straight mornings and counting, and built a community of hundreds of thousands of practitioners around it. He holds a PhD in cyber operations, teaches at The Citadel, and has taught GRC to more than 10,000 students through Simply Cyber Academy.</p>
+    </div>
+  </div>
+
+  <div class="script" data-copyable>
+    <div class="head-row">
+      <div><h3>Micro</h3><p class="meta">36 words</p></div>
+      <button class="copy" type="button">Copy</button>
+    </div>
+    <div data-body>
+      <p>Gerald Auger, PhD is the founder of Simply Cyber. He has hosted a live cybersecurity threat briefing every weekday morning for <span data-streak>1,232</span> straight days and built a community of hundreds of thousands of practitioners around it.</p>
+    </div>
+  </div>
+
+  <div class="rule"></div>
+
+  <h2 id="headshots">Headshots</h2>
+  <div class="shotwrap">
+    <img class="shot" src="/assets/gerald-auger-headshot-600.webp" width="260" height="260" alt="Headshot of Gerald Auger, PhD">
+    <div class="shotmeta">
+      <p class="t">Primary headshot</p>
+      <p class="s">Square crop, 1080 x 1080. This is the image Gerald uses everywhere, so it is the one your audience already recognizes.</p>
+      <a class="dl" href="/assets/gerald-auger-headshot-1080.jpg" download>Download high resolution</a>
+      <p class="s">No photo credit required. Please do not stretch, recolor, or filter it. Crop to a circle if your template needs one.</p>
+    </div>
+  </div>
+  <p class="s" style="color:var(--muted);font-size:.92rem;margin-top:20px">
+    More coming: a horizontal crop for wide banners, a neutral background version, and on-stage action shots.
+  </p>
 
   <div class="rule"></div>
 

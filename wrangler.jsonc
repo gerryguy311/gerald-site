@@ -6,5 +6,11 @@
   "assets": {
     "directory": "./public",
     "not_found_handling": "404-page"
-  }
+  },
+  // Attaching the custom domains here means `wrangler deploy` creates them
+  // and the DNS records for you. No dashboard clicking required.
+  "routes": [
+    { "pattern": "gerald.media", "custom_domain": true },
+    { "pattern": "www.gerald.media", "custom_domain": true }
+  ]
 }

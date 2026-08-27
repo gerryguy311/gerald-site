@@ -57,6 +57,17 @@
     color:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:9px 16px;margin-bottom:14px
   }
   .dl:hover{border-color:var(--gold);color:var(--gold)}
+  .theme{border-left:2px solid var(--rule);padding:2px 0 2px 20px;margin:0 0 22px}
+  .theme .t{font-weight:500;margin:0 0 5px}
+  .theme .s{color:#cfd6e2;font-size:.96rem;margin:0}
+  .vid{display:block;border:1px solid var(--rule);border-radius:10px;padding:16px 18px;margin:0 0 12px;background:rgba(255,255,255,.03)}
+  .vid:hover{border-color:var(--accent)}
+  .vid .t{font-weight:500;margin:0 0 4px;color:var(--paper)}
+  .vid .s{color:var(--muted);font-size:.87rem;margin:0}
+  ul.plainlist{list-style:none;padding:0;margin:0}
+  ul.plainlist li{padding:9px 0;border-bottom:1px solid var(--rule);font-size:.96rem}
+  ul.plainlist li:last-child{border-bottom:none}
+  ul.plainlist span{color:var(--muted)}
   .rule{height:1px;background:var(--rule);margin:56px 0}
   h2{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:500;margin:0 0 18px}
   .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
@@ -125,7 +136,7 @@
     <div class="card"><p class="t">Bios</p><p class="s">Long, medium, short, and micro. Copy and paste.</p><p class="ready"><a class="plain" href="#bios">Ready &rarr;</a></p></div>
     <div class="card"><p class="t">Headshots</p><p class="s">High resolution, print ready.</p><p class="ready"><a class="plain" href="#headshots">Ready &rarr;</a></p></div>
     <div class="card"><p class="t">Action Shots</p><p class="s">On stage, for promo use.</p><p class="soon">Coming soon</p></div>
-    <div class="card"><p class="t">Talks &amp; Abstracts</p><p class="s">Titles, subtitles, and full session descriptions.</p><p class="soon">Coming soon</p></div>
+    <div class="card"><p class="t">Speaking</p><p class="s">Themes, past audiences, and full talks on video.</p><p class="ready"><a class="plain" href="#speaking">Ready &rarr;</a></p></div>
     <div class="card"><p class="t">AV &amp; Logistics</p><p class="s">Tech needs, travel origin, and what I need from you.</p><p class="soon">Coming soon</p></div>
   </div>
 
@@ -165,6 +176,70 @@
     </div>
     <p class="aside"><span class="tag">Note to the emcee</span> Auger is pronounced <b>OH-zher</b>, like Azure with an O. Please don't read this line aloud.</p>
   </div>
+
+  <div class="rule"></div>
+
+  <h2 id="speaking">Speaking</h2>
+
+  <p style="font-size:1.05rem;max-width:36em;margin:0 0 14px;color:#dfe4ec">
+    I don't have a circuit talk that I give everywhere.
+  </p>
+  <p class="s" style="color:#cfd6e2;font-size:.98rem;max-width:36em;margin:0 0 32px">
+    Most of my speaking comes from people asking, and almost all of it is built for the specific room. I'd rather
+    spend a call understanding who is in your audience and what would actually move them, then build something that
+    serves them, than hand you a deck I've already given forty times. The goal every time is the same: entertaining
+    and educational, in that order, because nobody learns anything from a talk they tuned out of.
+  </p>
+
+  <h2 style="margin-bottom:22px">Themes I keep coming back to</h2>
+
+  <div class="theme">
+    <p class="t">Consistency, and why cyber programs actually fail</p>
+    <p class="s">Most security programs don't fail on strategy, they fail on execution and follow-through. What it takes to
+    build something that still works in year three, drawn from running a daily program with zero missed days.</p>
+  </div>
+  <div class="theme">
+    <p class="t">Supply chain and third-party risk</p>
+    <p class="s">Where the real exposure sits, how to size it without a hundred-question spreadsheet nobody reads, and what
+    leadership actually needs to decide. Delivered to state agency CIOs.</p>
+  </div>
+  <div class="theme">
+    <p class="t">The modern threat landscape, for people who aren't in security</p>
+    <p class="s">What a general workforce or executive team genuinely needs to understand right now, without fear-mongering
+    and without jargon. Delivered to enterprise staff and full workforces.</p>
+  </div>
+  <div class="theme">
+    <p class="t">GRC as a career, and how people actually get in</p>
+    <p class="s">The path into governance, risk, and compliance, what the work is really like, and what hiring managers are
+    looking for. This is the subject I've taught to more students than any other.</p>
+  </div>
+  <div class="theme">
+    <p class="t">Community as security infrastructure</p>
+    <p class="s">Why the defenders' advantage is collective, and what it takes to build a room where people share what they
+    know instead of guarding it. The subject of my Wild West Hackin' Fest keynote.</p>
+  </div>
+
+  <h2 style="margin:44px 0 18px">Watch a full talk</h2>
+  <a class="vid" href="https://youtu.be/G6rONAQCyUk" target="_blank" rel="noopener">
+    <p class="t">Dawn of Enlightenment: The Golden Age of Cybersecurity Knowledge and Collaboration</p>
+    <p class="s">Keynote &nbsp;·&nbsp; Wild West Hackin' Fest &nbsp;·&nbsp; 30 minutes</p>
+  </a>
+  <a class="vid" href="https://youtu.be/7bMzXvtA0YQ" target="_blank" rel="noopener">
+    <p class="t">What Game of Thrones Can Teach Us About Cybersecurity</p>
+    <p class="s">Keynote &nbsp;·&nbsp; BSidesCHS 2023, Charleston SC &nbsp;·&nbsp; 56 minutes</p>
+  </a>
+
+  <h2 style="margin:44px 0 18px">Recent audiences</h2>
+  <ul class="plainlist">
+    <li>Raymond James <span>&nbsp;·&nbsp; full workforce, modern state of cybersecurity</span></li>
+    <li>South Carolina Critical Infrastructure Cybersecurity (SC CIC)</li>
+    <li>State of Georgia <span>&nbsp;·&nbsp; agency CIOs, supply chain security risk</span></li>
+    <li>Wild West Hackin' Fest <span>&nbsp;·&nbsp; keynote</span></li>
+    <li>BSidesCHS <span>&nbsp;·&nbsp; keynote</span></li>
+  </ul>
+  <p class="s" style="color:var(--muted);font-size:.9rem;margin-top:16px">
+    Much of my speaking is private and unrecorded, so this list is partial by nature.
+  </p>
 
   <div class="rule"></div>
 

@@ -6,7 +6,7 @@
 <!-- REMOVE THIS LINE WHEN THE REAL SITE LAUNCHES -->
 <meta name="robots" content="noindex, nofollow">
 <title>Gerald Auger, PhD</title>
-<meta name="description" content="Speaker resources for Gerald Auger, PhD. Bios, headshots, talk abstracts, and everything an event organizer needs.">
+<meta name="description" content="Speaker resources for Gerald Auger, PhD. Bios, headshots, intro script, and everything an event organizer needs.">
 <meta property="og:title" content="Gerald Auger, PhD">
 <meta property="og:description" content="Speaker resources for event organizers.">
 <meta property="og:type" content="website">
@@ -25,49 +25,57 @@
   }
   *{box-sizing:border-box}
   body{
-    margin:0;
-    background:var(--ink);
-    color:var(--paper);
+    margin:0;background:var(--ink);color:var(--paper);
     font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-    font-weight:300;
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
+    font-weight:300;line-height:1.6;-webkit-font-smoothing:antialiased;
   }
-  .wrap{max-width:820px;margin:0 auto;padding:12vh 24px 10vh}
-  .eyebrow{
-    font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;
-    color:var(--gold);font-weight:500;margin:0 0 18px
-  }
-  h1{
-    font-size:clamp(2.4rem,7vw,4rem);font-weight:600;line-height:1.05;
-    margin:0 0 8px;letter-spacing:-.02em
-  }
-  .pron{color:var(--muted);font-size:1rem;margin:0 0 36px}
+  .wrap{max-width:820px;margin:0 auto;padding:12vh 24px 12vh}
+  .eyebrow{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:500;margin:0 0 18px}
+  h1{font-size:clamp(2.4rem,7vw,4rem);font-weight:600;line-height:1.05;margin:0 0 8px;letter-spacing:-.02em}
+  .pron{color:var(--muted);font-size:1rem;margin:0 0 32px}
   .pron b{color:var(--paper);font-weight:500}
-  .lede{
-    font-size:clamp(1.1rem,2.6vw,1.4rem);max-width:34em;margin:0 0 44px;
-    color:#dfe4ec
+  .lede{font-size:clamp(1.1rem,2.6vw,1.4rem);max-width:34em;margin:0 0 32px;color:#dfe4ec}
+  .streak{
+    display:inline-flex;align-items:baseline;gap:10px;
+    border:1px solid var(--rule);border-radius:999px;padding:10px 20px;
+    background:rgba(216,166,58,.07)
   }
-  .rule{height:1px;background:var(--rule);margin:44px 0}
-  h2{
-    font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;
-    color:var(--muted);font-weight:500;margin:0 0 18px
-  }
+  .streak .n{font-size:1.5rem;font-weight:600;color:var(--gold);letter-spacing:-.01em}
+  .streak .l{font-size:.9rem;color:var(--muted)}
+  .rule{height:1px;background:var(--rule);margin:56px 0}
+  h2{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:500;margin:0 0 18px}
   .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
-  .card{
-    border:1px solid var(--rule);border-radius:10px;padding:18px 20px;
-    background:rgba(255,255,255,.03)
-  }
+  .card{border:1px solid var(--rule);border-radius:10px;padding:18px 20px;background:rgba(255,255,255,.03)}
   .card .t{font-weight:500;margin:0 0 4px}
-  .card .s{color:var(--muted);font-size:.9rem;margin:0}
-  .soon{color:var(--gold);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+  .card .s{color:var(--muted);font-size:.9rem;margin:0 0 8px}
+  .soon{color:var(--muted);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase}
+  .ready{color:var(--gold);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase}
   a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(47,127,224,.35)}
   a:hover{border-bottom-color:var(--accent)}
-  footer{color:var(--muted);font-size:.9rem;margin-top:56px}
+  a.plain{border:none}
+  .script{border:1px solid var(--rule);border-radius:12px;padding:26px 28px;background:rgba(255,255,255,.03);margin:0 0 18px}
+  .script h3{margin:0;font-size:1rem;font-weight:500}
+  .script .meta{color:var(--muted);font-size:.85rem;margin:2px 0 18px}
+  .script p{margin:0 0 14px;font-size:1.02rem;color:#e7ebf2}
+  .script p:last-of-type{margin-bottom:0}
+  .script b{font-weight:600;color:#fff}
+  .aside{
+    margin-top:18px;padding:12px 16px;border-left:2px solid var(--gold);
+    background:rgba(216,166,58,.06);color:#cfd6e2;font-size:.92rem
+  }
+  .aside .tag{display:block;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+  .head-row{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+  button.copy{
+    font-family:inherit;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--paper);background:transparent;border:1px solid var(--rule);
+    border-radius:6px;padding:7px 14px;cursor:pointer;white-space:nowrap
+  }
+  button.copy:hover{border-color:var(--accent);color:var(--accent)}
+  button.copy.done{border-color:var(--gold);color:var(--gold)}
   dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 20px;font-size:.95rem}
   dt{color:var(--muted)}
   dd{margin:0}
-  @media (prefers-color-scheme: light){}
+  footer{color:var(--muted);font-size:.9rem;margin-top:56px}
 </style>
 </head>
 <body>
@@ -85,16 +93,58 @@
     security teams talk about risk in language the business actually hears.
   </p>
 
+  <p class="streak">
+    <span class="n" data-streak>1,204</span>
+    <span class="l">consecutive weekday morning threat briefings</span>
+  </p>
+
   <div class="rule"></div>
 
   <h2>For Event Organizers</h2>
   <div class="grid">
+    <div class="card"><p class="t">Intro Script</p><p class="s">Written to be read aloud, not recited from a bio.</p><p class="ready"><a class="plain" href="#intro">Ready &rarr;</a></p></div>
     <div class="card"><p class="t">Bios</p><p class="s">Long, medium, short, and micro. Copy and paste.</p><p class="soon">Coming soon</p></div>
     <div class="card"><p class="t">Headshots</p><p class="s">High resolution, print ready.</p><p class="soon">Coming soon</p></div>
     <div class="card"><p class="t">Action Shots</p><p class="s">On stage, for promo use.</p><p class="soon">Coming soon</p></div>
-    <div class="card"><p class="t">Intro Script</p><p class="s">Written to be read aloud, not recited from a bio.</p><p class="soon">Coming soon</p></div>
     <div class="card"><p class="t">Talks &amp; Abstracts</p><p class="s">Titles, subtitles, and full session descriptions.</p><p class="soon">Coming soon</p></div>
     <div class="card"><p class="t">AV &amp; Logistics</p><p class="s">Tech needs, travel origin, and what I need from you.</p><p class="soon">Coming soon</p></div>
+  </div>
+
+  <div class="rule"></div>
+
+  <h2 id="intro">Intro Script</h2>
+
+  <div class="script" data-copyable>
+    <div class="head-row">
+      <div>
+        <h3>Full introduction</h3>
+        <p class="meta">About 45 seconds</p>
+      </div>
+      <button class="copy" type="button">Copy</button>
+    </div>
+    <div data-body>
+      <p>Every weekday morning at 8am Eastern, a few hundred people log on to hear one person walk through what happened in cybersecurity in the last twenty four hours, and what it actually means for their job.</p>
+      <p>That has now happened <b><span data-streak>1,204</span></b> weekday mornings in a row.</p>
+      <p>Not a campaign. Not a product launch. Just showing up, every single day, for years. And somewhere along the way it stopped being a show and became a community. Seventeen thousand people in a Discord server. A couple hundred thousand more on YouTube. And a long list of practitioners who will tell you they got their first job in this field because of something that started on that livestream.</p>
+      <p>He has a PhD in cyber operations, two decades in the industry, and a SANS award for the show. Those are real, but they're not why he's up here.</p>
+      <p>He's up here because he answered a question most people only ask themselves once: what actually happens if you just don't stop?</p>
+      <p>Please welcome <b>Dr. Gerald Auger.</b></p>
+    </div>
+    <p class="aside"><span class="tag">Note to the emcee</span> Auger is pronounced <b>OH-zher</b>, like Azure with an O. Please don't read this line aloud.</p>
+  </div>
+
+  <div class="script" data-copyable>
+    <div class="head-row">
+      <div>
+        <h3>Short introduction</h3>
+        <p class="meta">About 15 seconds, for panels and podcasts</p>
+      </div>
+      <button class="copy" type="button">Copy</button>
+    </div>
+    <div data-body>
+      <p>Our next guest has hosted a live cybersecurity threat briefing every weekday morning for <b><span data-streak>1,204</span></b> straight days, and built a community of tens of thousands of practitioners doing it. He's a PhD, a professor, and the founder of Simply Cyber. Please welcome <b>Dr. Gerald Auger.</b></p>
+    </div>
+    <p class="aside"><span class="tag">Note to the emcee</span> Auger is pronounced <b>OH-zher</b>, like Azure with an O. Please don't read this line aloud.</p>
   </div>
 
   <div class="rule"></div>
@@ -114,5 +164,57 @@
   </footer>
 
 </main>
+
+<script>
+// ---------------------------------------------------------------------------
+// Live streak counter.
+// Set FIRST_EPISODE to the real first-episode date and the number updates
+// itself forever. Counts weekdays only (Mon-Fri), inclusive of both ends.
+// ---------------------------------------------------------------------------
+var FIRST_EPISODE = "2022-01-17"; // TODO: confirm the real first-episode date
+
+(function () {
+  function weekdaysBetween(startISO) {
+    var parts = startISO.split("-");
+    var d = new Date(Date.UTC(+parts[0], +parts[1] - 1, +parts[2]));
+    var now = new Date();
+    var end = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+    var n = 0;
+    while (d.getTime() <= end) {
+      var day = d.getUTCDay();
+      if (day !== 0 && day !== 6) n++;
+      d.setUTCDate(d.getUTCDate() + 1);
+    }
+    return n;
+  }
+
+  try {
+    var count = weekdaysBetween(FIRST_EPISODE).toLocaleString("en-US");
+    var nodes = document.querySelectorAll("[data-streak]");
+    for (var i = 0; i < nodes.length; i++) nodes[i].textContent = count;
+  } catch (e) { /* leave the hardcoded fallback in place */ }
+
+  // Copy buttons: grab the script text as plain paragraphs.
+  var blocks = document.querySelectorAll("[data-copyable]");
+  for (var j = 0; j < blocks.length; j++) {
+    (function (block) {
+      var btn = block.querySelector("button.copy");
+      btn.addEventListener("click", function () {
+        var ps = block.querySelectorAll("[data-body] p");
+        var out = [];
+        for (var k = 0; k < ps.length; k++) out.push(ps[k].innerText.trim());
+        navigator.clipboard.writeText(out.join("\n\n")).then(function () {
+          btn.textContent = "Copied";
+          btn.className = "copy done";
+          setTimeout(function () {
+            btn.textContent = "Copy";
+            btn.className = "copy";
+          }, 1800);
+        });
+      });
+    })(blocks[j]);
+  }
+})();
+</script>
 </body>
 </html>

@@ -68,6 +68,18 @@
   ul.plainlist li{padding:9px 0;border-bottom:1px solid var(--rule);font-size:.96rem}
   ul.plainlist li:last-child{border-bottom:none}
   ul.plainlist span{color:var(--muted)}
+  .pull{
+    margin:44px 0 0;padding:28px 0 0;border-top:1px solid var(--rule)
+  }
+  .pull blockquote{
+    margin:0;font-size:clamp(1.25rem,3.2vw,1.6rem);line-height:1.4;font-weight:300;
+    color:#f2f5f9;letter-spacing:-.01em;max-width:22em
+  }
+  .pull .mark{color:var(--gold);font-weight:600}
+  .pull cite{
+    display:block;margin-top:18px;font-style:normal;font-size:.92rem;color:var(--muted)
+  }
+  .pull cite b{display:block;color:var(--paper);font-weight:500;font-size:1rem;margin-bottom:2px}
   .rule{height:1px;background:var(--rule);margin:56px 0}
   h2{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:500;margin:0 0 18px}
   .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
@@ -127,6 +139,18 @@
     <span class="n" data-streak>1,232</span>
     <span class="l">consecutive weekday morning threat briefings</span>
   </p>
+
+
+  <div class="pull">
+    <blockquote>
+      <span class="mark">&ldquo;</span>Gerry and Simply Cyber make me believe in the future of security.
+      Hands always out to give. Never to take.<span class="mark">&rdquo;</span>
+    </blockquote>
+    <cite>
+      <b>John Strand</b>
+      Owner, Black Hills Information Security and Wild West Hackin&rsquo; Fest
+    </cite>
+  </div>
 
   <div class="rule"></div>
 

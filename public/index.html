@@ -85,6 +85,21 @@
     display:block;margin-top:16px;font-style:normal;font-size:.88rem;color:var(--muted);line-height:1.45
   }
   .pull cite b{display:block;color:var(--paper);font-weight:500;font-size:.98rem;margin-bottom:2px}
+  .shots{display:grid;gap:14px;grid-template-columns:1fr}
+  @media (min-width:720px){
+    .shots{grid-template-columns:1fr 1fr auto;align-items:start}
+  }
+  .shot-fig{margin:0;display:flex;flex-direction:column;gap:8px}
+  .shot-fig img{
+    width:100%;height:auto;display:block;border-radius:10px;
+    border:1px solid var(--rule);background:var(--rule)
+  }
+  .shot-fig figcaption{display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .shot-fig .cap{color:var(--muted);font-size:.82rem}
+  .shot-fig a.dl{margin:0;padding:5px 11px;font-size:.66rem}
+  @media (min-width:720px){
+    .shot-tall{max-width:230px}
+  }
   .rule{height:1px;background:var(--rule);margin:56px 0}
   h2{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:500;margin:0 0 18px}
   .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
@@ -179,7 +194,7 @@
     <div class="card"><p class="t">Intro Script</p><p class="s">Written to be read aloud, not recited from a bio.</p><p class="ready"><a class="plain" href="#intro">Ready &rarr;</a></p></div>
     <div class="card"><p class="t">Bios</p><p class="s">Long, medium, short, and micro. Copy and paste.</p><p class="ready"><a class="plain" href="#bios">Ready &rarr;</a></p></div>
     <div class="card"><p class="t">Headshots</p><p class="s">High resolution, print ready.</p><p class="ready"><a class="plain" href="#headshots">Ready &rarr;</a></p></div>
-    <div class="card"><p class="t">Action Shots</p><p class="s">On stage, for promo use.</p><p class="soon">Coming soon</p></div>
+    <div class="card"><p class="t">Action Shots</p><p class="s">On stage, for promo use.</p><p class="ready"><a class="plain" href="#action">Ready &rarr;</a></p></div>
     <div class="card"><p class="t">Speaking</p><p class="s">Themes, past audiences, and full talks on video.</p><p class="ready"><a class="plain" href="#speaking">Ready &rarr;</a></p></div>
     <div class="card"><p class="t">AV &amp; Logistics</p><p class="s">Tech needs, travel origin, and what I need from you.</p><p class="soon">Coming soon</p></div>
   </div>
@@ -353,8 +368,41 @@
     </div>
   </div>
   <p class="s" style="color:var(--muted);font-size:.92rem;margin-top:20px">
-    More coming: a horizontal crop for wide banners, a neutral background version, and on-stage action shots.
+    More coming: a horizontal crop for wide banners and a neutral background version.
   </p>
+
+  <div class="rule"></div>
+
+  <h2 id="action">Action Shots</h2>
+  <p class="s" style="color:var(--muted);font-size:.92rem;margin:-6px 0 22px">
+    Wild West Hackin&rsquo; Fest, October 2024. Free to use for event promotion. No photo credit required.
+  </p>
+  <div class="shots">
+    <figure class="shot-fig">
+      <img src="/assets/wwhf-2024-action-1-display.webp" width="1400" height="933" loading="lazy"
+           alt="Gerald Auger speaking on stage at Wild West Hackin' Fest, microphone in hand, event banner on the podium beside him">
+      <figcaption>
+        <span class="cap">Landscape &nbsp;·&nbsp; 2400px</span>
+        <a class="dl" href="/assets/wwhf-2024-action-1-2400.jpg" download>Download</a>
+      </figcaption>
+    </figure>
+    <figure class="shot-fig">
+      <img src="/assets/wwhf-2024-action-2-display.webp" width="1400" height="933" loading="lazy"
+           alt="Gerald Auger mid-talk on stage at Wild West Hackin' Fest, lit from the front with the event backdrop behind him">
+      <figcaption>
+        <span class="cap">Landscape &nbsp;·&nbsp; 2400px</span>
+        <a class="dl" href="/assets/wwhf-2024-action-2-2400.jpg" download>Download</a>
+      </figcaption>
+    </figure>
+    <figure class="shot-fig shot-tall">
+      <img src="/assets/wwhf-2024-action-3-display.webp" width="1000" height="1500" loading="lazy"
+           alt="Gerald Auger gesturing on stage at Wild West Hackin' Fest, seen over the heads of the audience">
+      <figcaption>
+        <span class="cap">Portrait &nbsp;·&nbsp; 2400px</span>
+        <a class="dl" href="/assets/wwhf-2024-action-3-2400.jpg" download>Download</a>
+      </figcaption>
+    </figure>
+  </div>
 
   <div class="rule"></div>
 

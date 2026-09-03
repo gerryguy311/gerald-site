@@ -95,7 +95,14 @@
   .shots{display:grid;gap:14px;grid-template-columns:1fr}
   @media (min-width:720px){
     .shots{grid-template-columns:1fr 1fr auto;align-items:start}
+    .shots.pair{grid-template-columns:1fr auto}
   }
+  .shot-group{margin:0 0 34px}
+  .shot-group:last-of-type{margin-bottom:0}
+  .shot-group h3{
+    font-size:.92rem;font-weight:500;margin:0 0 3px;color:var(--paper)
+  }
+  .shot-group .gcred{color:var(--muted);font-size:.84rem;margin:0 0 14px}
   .shot-fig{margin:0;display:flex;flex-direction:column;gap:8px}
   .shot-fig img{
     width:100%;height:auto;display:block;border-radius:10px;
@@ -311,6 +318,7 @@
     <li>State of Georgia <span>&nbsp;·&nbsp; agency CIOs, &ldquo;Securing the Digital Supply Chain: A State Agency Imperative&rdquo;</span></li>
     <li>Wild West Hackin' Fest <span>&nbsp;·&nbsp; keynote</span></li>
     <li>BSidesCHS <span>&nbsp;·&nbsp; keynote</span></li>
+    <li>BSides Greenville <span>&nbsp;·&nbsp; keynote</span></li>
     <li>State of North Dakota <span>&nbsp;·&nbsp; CIOs, consistency in executing cyber programs (upcoming)</span></li>
   </ul>
   <p class="s" style="color:var(--muted);font-size:.9rem;margin-top:16px">
@@ -435,35 +443,62 @@
   <div class="rule"></div>
 
   <h2 id="action">Action Shots</h2>
-  <p class="s" style="color:var(--muted);font-size:.92rem;margin:-6px 0 22px">
-    Wild West Hackin&rsquo; Fest keynote, October 2024. Photos by Aaron Clark, StarLight Photos.
-    Free to use for event promotion. Please carry the photo credit.
+  <p class="s" style="color:var(--muted);font-size:.92rem;margin:-6px 0 26px">
+    Free to use for event promotion. Please carry the photo credit listed with each set.
   </p>
-  <div class="shots">
-    <figure class="shot-fig">
-      <img src="/assets/wwhf-2024-action-1-display.webp" width="1400" height="933" loading="lazy"
-           alt="Gerald Auger delivering his keynote at Wild West Hackin' Fest, microphone in hand, event banner on the podium beside him">
-      <figcaption>
-        <span class="cap">Landscape &nbsp;&middot;&nbsp; 2400px</span>
-        <a class="dl" href="/assets/wwhf-2024-action-1-2400.jpg" download>Download</a>
-      </figcaption>
-    </figure>
-    <figure class="shot-fig">
-      <img src="/assets/wwhf-2024-action-2-display.webp" width="1400" height="933" loading="lazy"
-           alt="Gerald Auger mid-keynote at Wild West Hackin' Fest, lit from the front with the event backdrop behind him">
-      <figcaption>
-        <span class="cap">Landscape &nbsp;&middot;&nbsp; 2400px</span>
-        <a class="dl" href="/assets/wwhf-2024-action-2-2400.jpg" download>Download</a>
-      </figcaption>
-    </figure>
-    <figure class="shot-fig shot-tall">
-      <img src="/assets/wwhf-2024-action-3-display.webp" width="1000" height="1500" loading="lazy"
-           alt="Gerald Auger gesturing during his Wild West Hackin' Fest keynote, seen over the heads of the audience">
-      <figcaption>
-        <span class="cap">Portrait &nbsp;&middot;&nbsp; 2400px</span>
-        <a class="dl" href="/assets/wwhf-2024-action-3-2400.jpg" download>Download</a>
-      </figcaption>
-    </figure>
+
+  <div class="shot-group">
+    <h3>Wild West Hackin&rsquo; Fest keynote</h3>
+    <p class="gcred">October 2024 &nbsp;&middot;&nbsp; Photos by Aaron Clark, StarLight Photos</p>
+    <div class="shots">
+      <figure class="shot-fig">
+        <img src="/assets/wwhf-2024-action-1-display.webp" width="1400" height="933" loading="lazy"
+             alt="Gerald Auger delivering his keynote at Wild West Hackin' Fest, microphone in hand, event banner on the podium beside him">
+        <figcaption>
+          <span class="cap">Landscape &nbsp;&middot;&nbsp; 2400px</span>
+          <a class="dl" href="/assets/wwhf-2024-action-1-2400.jpg" download>Download</a>
+        </figcaption>
+      </figure>
+      <figure class="shot-fig">
+        <img src="/assets/wwhf-2024-action-2-display.webp" width="1400" height="933" loading="lazy"
+             alt="Gerald Auger mid-keynote at Wild West Hackin' Fest, lit from the front with the event backdrop behind him">
+        <figcaption>
+          <span class="cap">Landscape &nbsp;&middot;&nbsp; 2400px</span>
+          <a class="dl" href="/assets/wwhf-2024-action-2-2400.jpg" download>Download</a>
+        </figcaption>
+      </figure>
+      <figure class="shot-fig shot-tall">
+        <img src="/assets/wwhf-2024-action-3-display.webp" width="1000" height="1500" loading="lazy"
+             alt="Gerald Auger gesturing during his Wild West Hackin' Fest keynote, seen over the heads of the audience">
+        <figcaption>
+          <span class="cap">Portrait &nbsp;&middot;&nbsp; 2400px</span>
+          <a class="dl" href="/assets/wwhf-2024-action-3-2400.jpg" download>Download</a>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="shot-group">
+    <h3>BSides Greenville keynote</h3>
+    <p class="gcred">September 2025 &nbsp;&middot;&nbsp; Photos courtesy of Mike Holcomb</p>
+    <div class="shots pair">
+      <figure class="shot-fig">
+        <img src="/assets/bsides-greenville-2025-action-1-display.webp" width="1400" height="1050" loading="lazy"
+             alt="Gerald Auger on the main stage at BSides Greenville, arm extended mid-point, a large presentation screen behind him">
+        <figcaption>
+          <span class="cap">Landscape &nbsp;&middot;&nbsp; 2400px</span>
+          <a class="dl" href="/assets/bsides-greenville-2025-action-1-2400.jpg" download>Download</a>
+        </figcaption>
+      </figure>
+      <figure class="shot-fig shot-tall">
+        <img src="/assets/bsides-greenville-2025-action-2-display.webp" width="750" height="1000" loading="lazy"
+             alt="Gerald Auger speaking at BSides Greenville, microphone in hand, gesturing toward the audience">
+        <figcaption>
+          <span class="cap">Portrait &nbsp;&middot;&nbsp; 2400px</span>
+          <a class="dl" href="/assets/bsides-greenville-2025-action-2-2400.jpg" download>Download</a>
+        </figcaption>
+      </figure>
+    </div>
   </div>
 
   <div class="rule"></div>

@@ -79,14 +79,10 @@
     margin:44px 0 0;padding:30px 0 0;border-top:1px solid var(--rule);
     display:grid;gap:34px
   }
-  @media (min-width:780px){
-    .pull{grid-template-columns:1fr 1fr;gap:44px;align-items:start}
-  }
   .pull blockquote{margin:0;font-weight:300;color:#eef2f7}
   .q-lead blockquote{
     font-size:clamp(1.2rem,2.9vw,1.5rem);line-height:1.35;letter-spacing:-.01em;color:#f2f5f9
   }
-  .q-detail blockquote{font-size:1rem;line-height:1.6;color:#d8dee7}
   .pull .mark{color:var(--gold);font-weight:600}
   .pull cite{
     display:block;margin-top:16px;font-style:normal;font-size:.88rem;color:var(--muted);line-height:1.45
@@ -97,6 +93,11 @@
     .shots{grid-template-columns:1fr 1fr auto;align-items:start}
     .shots.pair{grid-template-columns:1fr auto}
   }
+  .quote-block{border-left:2px solid var(--rule);padding:2px 0 2px 22px;margin:0 0 30px}
+  .quote-block:last-child{margin-bottom:0}
+  .quote-block p{margin:0 0 14px;font-size:1rem;line-height:1.62;color:#dfe4ec}
+  .quote-block cite{display:block;font-style:normal;font-size:.88rem;color:var(--muted);line-height:1.45}
+  .quote-block cite b{display:block;color:var(--paper);font-weight:500;font-size:.98rem;margin-bottom:2px}
   .shot-group{margin:0 0 34px}
   .shot-group:last-of-type{margin-bottom:0}
   .shot-group h3{
@@ -184,19 +185,6 @@
       <cite>
         <b>John Strand</b>
         Owner, Black Hills Information Security and Wild West Hackin&rsquo; Fest
-      </cite>
-    </div>
-    <div class="q-detail">
-      <blockquote>
-        <span class="mark">&ldquo;</span>As the person who runs our awareness program, I need a keynote that
-        does more than entertain for an hour. Dr Gerald Auger delivered. He connected with a broad,
-        non-technical audience, drove more live engagement than any session we had run before, and gave
-        people language they kept using long after October ended. I would book him again without
-        hesitation.<span class="mark">&rdquo;</span>
-      </blockquote>
-      <cite>
-        <b>Chuck Sapp</b>
-        Security Awareness Specialist, Raymond James
       </cite>
     </div>
   </div>
@@ -324,6 +312,33 @@
   <p class="s" style="color:var(--muted);font-size:.9rem;margin-top:16px">
     Much of my speaking is private and unrecorded, so this list is partial by nature.
   </p>
+
+  <div class="rule"></div>
+
+  <h2>What Organizers Say</h2>
+
+  <div class="quote-block">
+    <p>&ldquo;As the person who runs our awareness program, I need a keynote that does more than entertain for an
+    hour. Dr Gerald Auger delivered. He connected with a broad, non-technical audience, drove more live engagement
+    than any session we had run before, and gave people language they kept using long after October ended. I would
+    book him again without hesitation.&rdquo;</p>
+    <cite><b>Chuck Sapp</b>Security Awareness Specialist, Raymond James</cite>
+  </div>
+
+  <div class="quote-block">
+    <p>&ldquo;Dr. Gerald Auger spoke to an audience that included state CIOs and technical leaders, business owners,
+    local government leaders, other state leaders, and private-sector partners on securing the digital supply chain.
+    He came prepared, with a clear understanding of Georgia&rsquo;s governance structure and the challenges our
+    organizations face and tailored his presentation accordingly. Rather than simply talking through a list of
+    threats, he showed the audience how an attacker might approach an organization and connected those risks to
+    practical steps leaders can take through procurement, security, and incident response. Keeping such a diverse
+    group engaged throughout the duration of the session was a testament to his ability to connect with an audience,
+    make a complex topic relatable, and leave people with information they could actually use. His wealth of
+    knowledge and expertise brought tremendous value to the session and gave attendees practical insights they could
+    apply within their own organizations. Dr. Auger received high ratings on our post-event survey, with many
+    attendees requesting that he returns for future events. I highly recommend him as a speaker.&rdquo;</p>
+    <cite><b>Kenyatta Stubbs</b>Senior IT Strategist</cite>
+  </div>
 
   <div class="rule"></div>
 
